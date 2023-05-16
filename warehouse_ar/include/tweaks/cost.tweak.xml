@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse Arctic
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+
+
+  <ImyaTweaks Title="Cost" />
+
+  <!--
+
+
+    Coins
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Cost/Costs/Item[Ingredient='1010017']"
+    ModOpID="1337471194_Coins"
+    Type="Merge"
+  >
+    <Amount>500</Amount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::Amount"
+    ModOpID="1337471194_Coins"
+    Description="Amount of coins required to build."
+    ExposeID="Coins"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="10000"
+      Stepping="100"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    Timber
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Cost/Costs/Item[Ingredient='1010196']"
+    ModOpID="1337471194_Timber"
+    Type="Merge"
+  >
+    <Amount>10</Amount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::Amount"
+    ModOpID="1337471194_Timber"
+    Description="Amount of timber required to build."
+    ExposeID="Timber"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="75"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    Bricks
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Cost/Costs/Item[Ingredient='1010205']"
+    ModOpID="1337471194_Bricks"
+    Type="Merge"
+  >
+    <Amount>0</Amount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::Amount"
+    ModOpID="1337471194_Bricks"
+    Description="Amount of bricks required to build."
+    ExposeID="Bricks"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="75"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    Steel Beams
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Cost/Costs/Item[Ingredient='1010218']"
+    ModOpID="1337471194_SteelBeams"
+    Type="Merge"
+  >
+    <Amount>0</Amount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::Amount"
+    ModOpID="1337471194_SteelBeams"
+    Description="Amount of steel beams required to build."
+    ExposeID="Steel Beams"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="75"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    Windows
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Cost/Costs/Item[Ingredient='1010207']"
+    ModOpID="1337471194_Windows"
+    Type="Merge"
+  >
+    <Amount>0</Amount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::Amount"
+    ModOpID="1337471194_Windows"
+    Description="Amount of windows required to build."
+    ExposeID="Windows"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="75"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    Reinforced Concrete
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Cost/Costs/Item[Ingredient='1010202']"
+    ModOpID="1337471194_ReinforcedConcrete"
+    Type="Merge"
+  >
+    <Amount>0</Amount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::Amount"
+    ModOpID="1337471194_ReinforcedConcrete"
+    Description="Amount of reinforced concrete required to build."
+    ExposeID="Reinforced Concrete"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="75"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

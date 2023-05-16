@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse Old World & Cape Trelawney
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+
+
+  <ImyaTweaks Title="Logistic" />
+
+
+  <!--
+
+
+    ProcessingQueueParallelCount
+
+
+  -->
+  <ModOp
+    GUID="1337471190"
+    Path="/Values/LogisticNode/QueueConfiguration"
+    ModOpID="1337471190_ProcessingQueueParallelCount"
+    Type="Merge"
+  >
+    <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::ProcessingQueueParallelCount"
+    ModOpID="1337471190_ProcessingQueueParallelCount"
+    Description="Number of transporters to process in parallel. Should be greater than transporter count."
+    ExposeID="Processing Queue"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="2"
+      Max="32"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    TransporterCountMax
+
+
+  -->
+  <ModOp
+    GUID="1337471190"
+    Path="/Values/LogisticNode"
+    ModOpID="1337471190_TransporterCountMax"
+    Type="Merge"
+  >
+    <TransporterCountMax>0</TransporterCountMax>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::TransporterCountMax"
+    ModOpID="1337471190_TransporterCountMax"
+    Description="Number of transporters. Should be less than processing queue."
+    ExposeID="Transporter Count"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="16"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse Arctic
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+
+
+  <!--
+
+
+    Include mod
+
+
+  -->
+  <Include File="../../../../../include/mod/building.include.xml" />
+  <!--
+
+
+    Include tweaks
+
+
+  -->
+  <Include File="../../../../../include/tweaks/attackable.tweak.xml" />
+  <Include File="../../../../../include/tweaks/cost.tweak.xml" />
+  <Include File="../../../../../include/tweaks/feedback.tweak.xml" />
+  <Include File="../../../../../include/tweaks/logistic.tweak.xml" />
+  <Include File="../../../../../include/tweaks/maintenance.tweak.xml" />
+  <Include File="../../../../../include/tweaks/warehouse.tweak.xml" />
+
+
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

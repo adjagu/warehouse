@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse Africa
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+  <!--
+
+
+    Add Texts
+
+
+  -->
+  <ModOp Path="/TextExport/Texts" Type="Add">
+    <!--
+
+      warehouse_af : name
+
+    -->
+    <Text>
+      <GUID>1337471196</GUID>
+      <Text>Warehouse</Text>
+    </Text>
+    <!--
+
+      warehouse_af : info description
+
+    -->
+    <Text>
+      <GUID>1337471197</GUID>
+      <Text>Use iModYourAnno to tweak build cost, health, maintenance cost, storage amount, amount of transporters, and more.</Text>
+    </Text>
+  </ModOp>
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

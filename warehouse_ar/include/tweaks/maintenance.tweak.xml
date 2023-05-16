@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse Arctic
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+
+
+  <ImyaTweaks Title="Maintenance" />
+
+
+  <!--
+
+
+  Active
+
+
+  -->
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Maintenance/Maintenances/Item[Product='1010017']"
+    ModOpID="1337471194_MaintenanceActive"
+    Type="Merge"
+  >
+    <Amount>20</Amount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::Amount"
+    ModOpID="1337471194_MaintenanceActive"
+    Description="Active maintenance amount."
+    ExposeID="Active"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="500"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+
+  <!--
+
+
+  Inactive
+
+
+  -->
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Maintenance/Maintenances/Item[Product='1010017']"
+    ModOpID="1337471194_MaintenanceInactive"
+    Type="Merge"
+  >
+    <InactiveAmount>20</InactiveAmount>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::InactiveAmount"
+    ModOpID="1337471194_MaintenanceInactive"
+    Description="Inactive maintenance amount."
+    ExposeID="Inactive"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="100"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

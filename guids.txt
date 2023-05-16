@@ -1,0 +1,8 @@
+1337471190 : warehouse_owct : building
+1337471191 : warehouse_owct : info description
+1337471192 : warehouse_nw   : building
+1337471193 : warehouse_nw   : info description
+1337471194 : warehouse_ar   : building
+1337471195 : warehouse_ar   : info description
+1337471196 : warehouse_af   : building
+1337471197 : warehouse_af   : info description

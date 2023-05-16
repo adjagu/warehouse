@@ -1,0 +1,21 @@
+{
+  "Version": "0.0.1",
+  "License": "GPL-2.0-only",
+  "ModID": "HudsonsBayCompany_Warehouse_OWCT",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "Category": {
+    "English": "Gameplay"
+  },
+  "ModName": {
+    "English": "Warehouse OWCT"
+  },
+  "Description": {
+    "English": "Warehouse provides 10 morale, 50 storage, is not buildable by AI controlled players, and is fully tweakable with iModYourAnno's tweaking tool."
+  },
+  "KnownIssues": null,
+  "DLCDependencies": null,
+  "CreatorName": "adjagu",
+  "CreatorContact": null,
+  "Image": null
+}

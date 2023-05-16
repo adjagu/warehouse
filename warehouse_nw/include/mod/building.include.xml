@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse New World
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+  <!--
+
+
+    1337471192 : Add Building : Warehouse NW
+
+
+  -->
+  <ModOp
+    GUID="101323"
+    Type="AddNextSibling"
+  >
+    <Asset>
+      <Template>Warehouse</Template>
+      <Values>
+
+        <Standard>
+          <GUID>1337471192</GUID>
+          <Name>warehouse_nw</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_warehouse_plus.png</IconFilename>
+          <InfoDescription>1337471193</InfoDescription>
+        </Standard>
+
+        <AmbientMoodProvider>
+          <AmbientMood>ResidenceTier1</AmbientMood>
+          <Murmur>Warehouse</Murmur>
+        </AmbientMoodProvider>
+
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <DefenseByAIFactor>151</DefenseByAIFactor>
+          <HPBarOffset>8</HPBarOffset>
+          <MaximumHitPoints>2500</MaximumHitPoints>
+          <MoralePower>10</MoralePower>
+          <PausedTimeIfAttacked>0</PausedTimeIfAttacked>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+
+        <Blocking>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+
+        <Building>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+          <BuildingCategoryName>11151</BuildingCategoryName>
+          <BuildingType>Logistic</BuildingType>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <SkipUnlockMessage>1</SkipUnlockMessage>
+          <TerrainType>Terrain</TerrainType>
+        </Building>
+
+        <Constructable />
+
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+
+        <FeedbackController>
+          <NightBehavior>HideNone</NightBehavior>
+        </FeedbackController>
+
+        <Infolayer />
+
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+
+        <LogisticNode>
+          <QueueConfiguration>
+            <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+          </QueueConfiguration>
+          <TransporterCountMax>0</TransporterCountMax>
+        </LogisticNode>
+
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>20</Amount>
+              <InactiveAmount>20</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+
+        <Mesh>
+          <LogoMode>CorporationLogoFromPlayer</LogoMode>
+          <SetCompanyLogo>1</SetCompanyLogo>
+        </Mesh>
+
+        <Object>
+          <Skins>
+            <DefaultSkinName>1337471192</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+          </Skins>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/public/logistic_colony01_01/logistic_colony01_01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/public/logistics_colony01_02/logistic_colony01_02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/public/logistics_colony01_04/logistic_colony01_04.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+
+        <Pausable />
+
+        <Selection>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+          <GUIType>Warehouse</GUIType>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+          <ParticipantMessageTrigger>ClickKontor</ParticipantMessageTrigger>
+        </Selection>
+
+        <SoundEmitter>
+
+          <ActiveSounds>
+            <Item>
+              <Sound>200834</Sound>
+            </Item>
+          </ActiveSounds>
+
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+
+          <ConstructionSounds>
+
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+
+            <BuildMoveSuccess>
+              <Item>
+                <Sound>203995</Sound>
+              </Item>
+            </BuildMoveSuccess>
+
+          </ConstructionSounds>
+
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+
+        </SoundEmitter>
+
+        <StorageBase>
+          <ProductStorageList>120055</ProductStorageList>
+        </StorageBase>
+
+        <UpgradeList />
+
+        <Warehouse>
+          <OverflowFlotsam>
+            <MaxFlotsamCount>5</MaxFlotsamCount>
+            <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
+          </OverflowFlotsam>
+          <StorageType>Warehouse</StorageType>
+          <WarehouseStorage>
+            <StorageMax>50</StorageMax>
+          </WarehouseStorage>
+        </Warehouse>
+
+      </Values>
+    </Asset>
+  </ModOp>
+
+
+  <!--
+
+
+    130095 : AssetPool : asset pool colony01 warehouse
+
+
+  -->
+  <ModOp
+    GUID="130095"
+    Path="/Values/AssetPool/AssetList/Item[Asset='101323']"
+    Type="AddNextSibling"
+  >
+    <Item>
+      <Asset>1337471192</Asset>
+    </Item>
+  </ModOp>
+
+
+  <!--
+
+
+    368 : ItemEffectTargetPool : all buildings with maintenance DLC11
+
+
+  -->
+  <ModOp
+    GUID="368"
+    Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs/Item[GUID='101323']"
+    Type="AddNextSibling"
+  >
+    <Item>
+      <GUID>1337471192</GUID>
+    </Item>
+  </ModOp>
+
+
+  <!--
+
+
+    25000193 : ConstructionCategory : sa construction menu 1 (tier)
+
+
+  -->
+  <ModOp
+    GUID="25000193"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='101323']"
+    Type="AddNextSibling"
+  >
+    <Item>
+      <Building>1337471192</Building>
+    </Item>
+  </ModOp>
+
+
+  <!--
+
+
+    500137 : ConstructionCategory : sa construction menu city (category)
+
+
+  -->
+  <ModOp
+    GUID="500137"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='101323']"
+    Type="AddNextSibling"
+  >
+    <Item>
+      <Building>1337471192</Building>
+    </Item>
+  </ModOp>
+
+
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse Old World & Cape Trelawney
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+  <!--
+
+
+    Add Texts
+
+
+  -->
+  <ModOp Path="/TextExport/Texts" Type="Add">
+    <!--
+
+      warehouse_owct : name
+
+    -->
+    <Text>
+      <GUID>1337471190</GUID>
+      <Text>Warehouse</Text>
+    </Text>
+    <!--
+
+      warehouse_owct : info description
+
+    -->
+    <Text>
+      <GUID>1337471191</GUID>
+      <Text>Use iModYourAnno to tweak build cost, health, maintenance cost, storage amount, amount of transporters, and more.</Text>
+    </Text>
+  </ModOp>
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse New World
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+
+
+  <ImyaTweaks Title="Feedback Controller" />
+
+
+  <!--
+
+
+    NightBehavior
+
+
+  -->
+  <ModOp
+    GUID="1337471192"
+    Path="/Values/FeedbackController"
+    ModOpID="1337471192_NightBehavior"
+    Type="Merge"
+  >
+    <NightBehavior>HideNone</NightBehavior>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::NightBehavior"
+    ModOpID="1337471192_NightBehavior"
+    Description="Hide all, none, or random in-game characters from spawning at this building at night time."
+    ExposeID="Night Behavior"
+    Kind="Enum"
+  >
+    <FixedValues>
+      <Value>HideAll</Value>
+      <Value>HideNone</Value>
+      <Value>HideRand</Value>
+    </FixedValues>
+  </ImyaExpose>
+
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

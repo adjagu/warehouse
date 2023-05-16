@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse Arctic
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+
+
+  <ImyaTweaks Title="Attackable" />
+
+  <!--
+
+
+    MaximumHitPoints
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Attackable"
+    ModOpID="1337471194_MaximumHitPoints"
+    Type="Merge"
+  >
+    <MaximumHitPoints>2500</MaximumHitPoints>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::MaximumHitPoints"
+    ModOpID="1337471194_MaximumHitPoints"
+    Description="Maximum hit points."
+    ExposeID="Max Hit Points"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="2500"
+      Max="9000"
+      Stepping="100"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    MoralePower
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Attackable"
+    ModOpID="1337471194_MoralePower"
+    Type="Merge"
+  >
+    <MoralePower>10</MoralePower>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::MoralePower"
+    ModOpID="1337471194_MoralePower"
+    Description="Moral power amount."
+    ExposeID="Morale"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="10"
+      Max="100"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    SelfHealPerHealTick
+
+
+  -->
+
+  <ModOp
+    GUID="1337471194"
+    Path="/Values/Attackable"
+    ModOpID="1337471194_SelfHealPerHealTick"
+    Type="Merge"
+  >
+    <SelfHealPerHealTick>4</SelfHealPerHealTick>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::SelfHealPerHealTick"
+    ModOpID="1337471194_SelfHealPerHealTick"
+    Description="Self heal per game (heal) tick."
+    ExposeID="Self Healing"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="4"
+      Max="100"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>

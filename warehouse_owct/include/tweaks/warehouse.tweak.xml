@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+  Name    : Warehouse Old World & Cape Trelawney
+  Author  : adjagu
+  License : GPL-2.0-only
+  Version : 0.0.1
+
+
+-->
+<ModOps>
+
+
+  <ImyaTweaks Title="Warehouse" />
+
+
+  <!--
+
+
+    StorageMax
+
+
+  -->
+  <ModOp
+    GUID="1337471190"
+    Path="/Values/Warehouse/WarehouseStorage"
+    ModOpID="1337471190_StorageMax"
+    Type="Merge"
+  >
+    <StorageMax>50</StorageMax>
+  </ModOp>
+
+  <ImyaExpose
+    Path="self::StorageMax"
+    ModOpID="1337471190_StorageMax"
+    Description="Amount of storage."
+    ExposeID="Storage"
+    Kind="Slider"
+  >
+    <SliderDefinition
+      Min="0"
+      Max="1000"
+      Stepping="1"
+    />
+  </ImyaExpose>
+
+  <!--
+
+
+    The end.
+
+
+  -->
+</ModOps>
